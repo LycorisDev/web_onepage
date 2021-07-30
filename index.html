@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title>The R'Guitar Shop</title>
+		<meta name="description" content="Votre meilleur riff mérite la meilleure guitare.">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+
+		<link rel="stylesheet" href="./css/style.css">
+		<!-- Google Fonts: Roboto (Regular 400) -->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+		<!-- Font-awesome (icons) -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" 
+			integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" 
+			crossorigin="anonymous" referrerpolicy="no-referrer">
+	</head>
+	<body>
+		<header>
+			<img src="./images/logo.png" alt="Logo de guitare avec le nom du site">
+			<nav>
+				<ul>
+					<a href="#esprit_r_guitar"><li>L'esprit R'Guitar</li></a>
+					<a href="#nos_grattes"><li>Nos grattes</li></a>
+					<a href="#"><li id="button_shop"><i class="fas fa-shopping-cart"></i> Boutique</li></a>
+				</ul>
+			</nav>
+		</header>
+
+		<section>
+			<!-- Réussir le h1 sans utiliser des paragraphes. Mettre des spans à la place. -->
+			<!--
+				Aussi, il vaut mieux mettre ce code dans le header au lieu de le mettre dans une section.
+				Niveau sémantique c'est mieux.
+			-->
+			<h1><p>Votre meilleur riff mérite</p><p> la meilleure guitare</p></h1>
+		</section>
+
+		<main>
+			<h2 id="esprit_r_guitar">L'esprit R'Guitar</h2>
+
+			<div id="main_body">
+				<div id="main_texts">
+					<div id="main_texts_1">
+						<h3>Seule compte la musique</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at diam eget quam gravida dictum vel id mi. Aenean vitae malesuada purus, id molestie urna. Phasellus vel ligula orci. Cras porta lorem quis leo accumsan iaculis. Vestibulum dignissim molestie ornare. Aenean porta tincidunt odio, a volutpat purus vehicula et. Nulla facilisi.</p>
+					</div>
+
+					<div id="main_texts_2">
+						<h3>Des Beatles à Nirvana</h3>
+						<p>Nulla nec nisi eleifend, elementum neque non, commodo turpis. Quisque odio lorem, placerat eu luctus et, euismod ut lectus. Maecenas tempus venetatis viverra. Nunc sagittis dictum enim nec convallis. Morbi mattis, augue eu sollicitudin luctus, est lectus rhoncus justo, sit amet viverra orci mauris a ex. Cras eu est ac sem pharetra egestas.</p>
+					</div>
+
+					<div id="main_texts_3">
+						<h3>Le son, notre métier</h3>
+						<p>Integer in tristique ante. Curabitur nec enim non libero scelerisque semper ut non ipsum. Donec hendrerit pulvinar metus vel sagittis. Suspendisse posuere odio non justo tincidunt, sit amet iaculis nisl congue.</p>
+					</div>
+				</div>
+
+				<div id="main_images">
+					<div id="main_images_first_row">
+						<img src="./images/image1.jpg" alt="Photo en noir et blanc d'un guitariste">
+						<img src="./images/image3.jpg" alt="Photo en noir et blanc d'une guitariste">
+					</div>
+					<div id="main_images_second_row">
+						<img src="./images/image2.jpg" alt="Photo en noir et blanc d'un guitariste en plein concert">
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<footer>
+			<h2 id="nos_grattes">Nos grattes</h2>
+
+			<div id="footer_body">
+				<div id="footer_text">
+					<h3>Les guitares en stock</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at diam eget quam gravida dictum vel id mi. Aenean vitae malesuada purus, id molestie urna. Phasellus vel ligula orci.</p>
+				</div>
+
+				<div id="guitars">
+					<table>
+						<tr>
+							<td><img src="./images/guitar1.jpg" alt="Guitare Gibson Casino"></td>
+							<td><img src="./images/guitar2.jpg" alt="Guitare Les Paul Plus Trans Blue"></td>
+							<td><img src="./images/guitar3.jpg" alt="Guitare Fender Stratocaster"></td>
+							<td><img src="./images/guitar4.jpg" alt="Guitare BC Rich Double Neck"></td>
+						</tr>
+
+						<tr id="row_names">
+							<td><h4>Gibson Casino</h4></td>
+							<td><h4>Les Paul Plus Trans Blue</h4></td>
+							<td><h4>Fender Stratocaster</h4></td>
+							<td><h4>BC Rich Double Neck</h4></td>
+						</tr>
+
+						<tr id="row_prices">
+							<td><p class="price">2000,00€</p></td>
+							<td>
+								<span class="price old_price">500,00€</span>
+								<span class="price">400,00€</span>
+							</td>
+							<td><p class="price">3000,00€</p></td>
+							<td><p class="price">2500,00€</p></td>
+						</tr>
+
+						<tr id="row_buttons">
+							<td><a href="#"><p class="button_buy">Acheter</p></a></td>
+							<td><a href="#"><p class="button_buy">Acheter</p></a></td>
+							<td><a href="#"><p class="button_buy">Acheter</p></a></td>
+							<td><a href="#"><p class="button_buy">Acheter</p></a></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
+
