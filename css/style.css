@@ -116,19 +116,19 @@ nav, nav li
 	display: inline-block;
 }
 
-header
+#navbar
 {
 	position: relative;
 	height: 80px;
 	padding: 5px 30px;
 }
 
-header img
+#navbar img
 {
 	max-height: 100%;
 }
 
-header nav
+#navbar nav
 {
 	position: absolute;
 	top: 30px;
@@ -136,13 +136,13 @@ header nav
 	right: 50px;
 }
 
-header nav ul
+#navbar nav ul
 {
 	display: flex;
 	justify-content: space-around;
 }
 
-header nav li
+#navbar nav li
 {
 	padding: 7px;
 }
