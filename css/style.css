@@ -43,6 +43,11 @@ a:hover, a:active, #button_shop
 	color: var(--red);
 }
 
+a:hover, .a:hover
+{
+    cursor: pointer;
+}
+
 #button_shop, .button_buy
 {
 	border: 1px solid var(--red);
