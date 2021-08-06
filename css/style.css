@@ -375,12 +375,28 @@ h2#nos_grattes
 	display: flex;
 }
 
-#row_names td, #row_prices td, #row_buttons td
+#row_names td
+{
+    display: table;
+}
+
+#row_names td h4
+{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#row_prices td
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+#row_buttons td
 {
 	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-between;
+    justify-content: center;
 }
 
 .button_buy
