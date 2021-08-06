@@ -1,3 +1,5 @@
+/* GENERAL ------------------------------------------------------------------------------------- */
+
 :root
 {
 	--white: #FFF;
@@ -10,21 +12,15 @@
 {
 	margin: 0px;
 	padding: 0px;
-	position: static;
 }
 
 body
 {
-	background-color: var(--white);
+    color: var(--grey);
 	font-size: 1rem;
 	font-family: 'Roboto', sans-serif;
 	text-align: justify;
 	word-wrap: break-word;
-}
-
-body, a, a:visited
-{
-	color: var(--grey);
 }
 
 header, main, footer
@@ -32,26 +28,29 @@ header, main, footer
     height: 100vh;
 }
 
-section, h2, .button_buy
-{
-	background-color: var(--red);
-	color: var(--white);
-}
+/* LINKS --------------------------------------------------------------------------------------- */
 
-a, a:visited
+a
 {
 	text-decoration: none;
 }
 
-a:hover, a:active, #button_shop
+a:visited
 {
-	color: var(--red);
+	color: var(--grey);
 }
 
-a:hover, .a:hover
+a:hover
+{
+    color: var(--red);
+}
+
+.a:hover
 {
     cursor: pointer;
 }
+
+/* BUTTONS ------------------------------------------------------------------------------------- */
 
 #button_shop, .button_buy
 {
@@ -59,105 +58,63 @@ a:hover, .a:hover
 	border-radius: 5px;
 }
 
-#button_shop:hover, #button_shop:active
+#button_shop, .button_buy:hover
+{
+    background-color: var(--white);
+	color: var(--red);
+}
+
+#button_shop:hover, .button_buy
 {
 	background-color: var(--red);
 	color: var(--white);
 }
 
-.button_buy:hover, .button_buy:active
+.button_buy
 {
-	background-color: var(--white);
-	color: var(--red);
-}
-
-nav ul
-{
-	list-style-type: none;
-}
-
-h1
-{
-	font-size: 2.7rem;
-}
-
-h2
-{
-	font-size: 1.6rem;
-}
-
-h3, nav li
-{
-	font-size: 1.1rem;
-}
-
-h2, h3, h4, .button_buy
-{
+	margin: 15px;
+	padding: 8px 40px;
 	text-transform: uppercase;
-}
-
-h1, h2, h3, h4, .button_buy
-{
 	font-weight: bold;
 }
 
-h1, h2
-{
-	letter-spacing: .5rem;
-}
+/* HEADER (NAV BAR) ---------------------------------------------------------------------------- */
 
-nav li
+nav
 {
-	letter-spacing: .3rem;
-}
-
-h3, h4, .price
-{
-	letter-spacing: .2rem;
-}
-
-.old_price
-{
-	text-decoration: line-through;
-}
-
-nav, nav li
-{
-	display: inline-block;
-}
-
-#navbar
-{
-	position: relative;
 	height: 80px;
 	padding: 5px 30px;
 }
 
-#navbar img
+nav img
 {
-	max-height: 100%;
+	height: 100%;
 }
 
-#navbar nav
+nav ul
 {
 	position: absolute;
 	top: 30px;
 	left: 55%;
 	right: 50px;
-}
 
-#navbar nav ul
-{
-	display: flex;
+	list-style-type: none;
+
+    display: flex;
+    flex-flow: row nowrap;
 	justify-content: space-around;
 }
 
-#navbar nav li
+nav li
 {
 	padding: 7px;
+	font-size: 1.1rem;
+	letter-spacing: .3rem;
 }
 
-section::before
+/* HEADER (BODY) ------------------------------------------------------------------------------- */
+
+header .body::before
 {
 	content: "";
 	display: block;
@@ -166,7 +123,7 @@ section::before
 	background-color: var(--red);
 }
 
-section
+header .body
 {
 	background: url("../images/background.jpg") scroll no-repeat;
 	background-size: 100% 100%;
@@ -175,6 +132,11 @@ section
 
 h1
 {
+    color: var(--white);
+	font-size: 2.7rem;
+	font-weight: bold;
+	letter-spacing: .5rem;
+
 	position: absolute;
 	right: 120px;
 	bottom: 20%;
@@ -197,38 +159,100 @@ h1 span:last-child::before
     margin-right: 20px;
 }
 
-h2
+/* MAIN (GENERAL) ------------------------------------------------------------------------------ */
+
+main h2
 {
+	background-color: var(--red);
+    color: var(--white);
 	height: 130px;
+
+	text-transform: uppercase;
+	letter-spacing: .5rem;
+	font-weight: bold;
+	font-size: 1.6rem;
+
 	display: flex;
 	align-items: center;
-}
-
-h2#esprit_r_guitar
-{
 	justify-content: flex-start;
+
 	padding-left: 60px;
 }
 
-h2#nos_grattes
-{
-	justify-content: flex-end;
-	padding-right: 60px;
-}
-
-#main_body
+main .body
 {
 	display: flex;
 	flex-wrap: nowrap;
 	padding: 60px;
 }
 
-#main_texts
+main .texts
 {
 	width: 70%;
 }
 
-#main_images
+main .texts div
+{
+	height: 240px;
+	margin-bottom: 10px;
+}
+
+main .texts div p
+{
+	height: 150px;
+	line-height: 2.5;
+}
+
+main .texts h3
+{
+	margin: 35px 0px;
+	text-transform: uppercase;
+	letter-spacing: .2rem;
+	font-weight: bold;
+	font-size: 1.1rem;
+}
+
+main .texts h3:first-child
+{
+	margin-top: 0px;
+}
+
+#main_text_1 h3::after
+{
+    content: "";
+    display: inline-block;
+    height: var(--fancy_line_height);
+    width: 409px;
+    background-color: var(--red);
+    margin-left: 10px;
+    margin-bottom: 3px;
+}
+
+#main_text_2 h3::before
+{
+	content: "";
+	display: inline-block;
+	height: var(--fancy_line_height);
+	width: 445px;
+	background-color: var(--red);
+	margin-right: 10px;
+	margin-bottom: 3px;
+}
+
+#main_text_3 h3::after
+{
+    content: "";
+    display: inline-block;
+    height: var(--fancy_line_height);
+    width: 462px;
+    background-color: var(--red);
+    margin-left: 10px;
+    margin-bottom: 3px;
+}
+
+/* MAIN (IMAGES) ------------------------------------------------------------------------------- */
+
+main .images
 {
 	display: flex;
 	flex-flow: column nowrap;
@@ -263,93 +287,64 @@ h2#nos_grattes
 	margin-top: 14px;
 }
 
-#main_texts h3
-{
-	margin: 35px 0px;
-}
+/* FOOTER (GENERAL) ---------------------------------------------------------------------------- */
 
-#main_texts h3:first-child
+footer h2
 {
-	margin-top: 0px;
-}
-
-#main_texts div
-{
-	height: 240px;
-	margin-bottom: 10px;
-}
-
-#main_texts div p
-{
-	height: 150px;
-	line-height: 2.5;
-}
-
-#main_texts_1 h3::after
-{
-        content: "";
-        display: inline-block;
-        height: var(--fancy_line_height);
-        width: 409px;
-        background-color: var(--red);
-        margin-left: 10px;
-        margin-bottom: 3px;
-}
-
-#main_texts_2 h3::before
-{
-	content: "";
-	display: inline-block;
-	height: var(--fancy_line_height);
-	width: 445px;
 	background-color: var(--red);
-	margin-right: 10px;
-	margin-bottom: 3px;
+    color: var(--white);
+	height: 130px;
+
+	text-transform: uppercase;
+	letter-spacing: .5rem;
+	font-weight: bold;
+	font-size: 1.6rem;
+
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+
+	padding-right: 60px;
 }
 
-#main_texts_3 h3::after
-{
-        content: "";
-        display: inline-block;
-        height: var(--fancy_line_height);
-        width: 462px;
-        background-color: var(--red);
-        margin-left: 10px;
-        margin-bottom: 3px;
-}
-
-#footer_body
+footer .body
 {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
 
-#footer_text h3
+footer .texts h3
 {
 	margin: 50px;
 	margin-bottom: 30px;
 	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: .2rem;
+	font-weight: bold;
+	font-size: 1.1rem;
 }
 
-#footer_text h3::after
+footer .texts h3::after
 {
-	content: "";
-	display: inline-block;
-	height: var(--fancy_line_height);
+    content: "";
+    display: inline-block;
+    height: var(--fancy_line_height);
 	width: 200px;
-	margin-left: 10px;
-	margin-bottom: 3px;
-	background-color: var(--red);
+    background-color: var(--red);
+    margin-left: 10px;
+    margin-bottom: 3px;
 }
 
-#footer_text p
+footer .texts p
 {
 	width: 700px;
 	height: 80px;
 	margin-bottom: 20px;
 	line-height: 2.2;
 } 
+
+/* FOOTER (GUITARS) ---------------------------------------------------------------------------- */
 
 #guitars
 {
@@ -387,11 +382,15 @@ h2#nos_grattes
     display: table;
 }
 
-#row_names td h4
+h4
 {
     display: table-cell;
     vertical-align: middle;
     text-align: center;
+
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: .2rem;
 }
 
 #row_prices td
@@ -400,15 +399,19 @@ h2#nos_grattes
     justify-content: space-around;
 }
 
+.price
+{
+	letter-spacing: .2rem;
+}
+
+.old_price
+{
+	text-decoration: line-through;
+}
+
 #row_buttons td
 {
 	display: flex;
     justify-content: center;
-}
-
-.button_buy
-{
-	padding: 8px 40px;
-	margin: 15px;
 }
 
