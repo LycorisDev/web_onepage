@@ -82,31 +82,30 @@ a:hover
 
 nav
 {
-    height: 80px;
-    padding: 5px 30px;
+    padding: 10px 30px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav img
 {
-    height: 100%;
+    height: 80px;
 }
 
 nav ul
 {
-    position: absolute;
-    top: 30px;
-    left: 55%;
-    right: 50px;
-
+    margin: 20px;
     list-style-type: none;
-
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
+    flex-flow: row wrap;
+    align-items: center;
 }
 
 nav li
 {
+    margin: 10px 20px 0 20px;
     padding: 7px;
     font-size: 1.1rem;
     letter-spacing: .3rem;
@@ -125,27 +124,27 @@ header .body::before
 
 header .body
 {
-    background: url("../images/background.jpg") scroll no-repeat;
-    background-size: 100% 100%;
     height: 100%;
+    background: url("../images/background.jpg") no-repeat;
+    background-size: cover;
 }
 
 h1
 {
+    margin-left: 40px;
     color: var(--white);
     font-size: 2.7rem;
     font-weight: bold;
     letter-spacing: .5rem;
 
     position: absolute;
-    right: 120px;
+    right: 5%;
     bottom: 20%;
-    height: 130px;
-    width: 860px;
+}
 
-    display: flex;
-    flex-wrap: wrap;
-    align-content: space-between;
+h1 span
+{
+    display: block;
 }
 
 h1 span:last-child::before
@@ -159,25 +158,36 @@ h1 span:last-child::before
     margin-right: 20px;
 }
 
-/* MAIN (GENERAL) ------------------------------------------------------------------------------ */
+/* RED HEADERS --------------------------------------------------------------------------------- */
 
-main h2
+h2
 {
     background-color: var(--red);
     color: var(--white);
     height: 130px;
 
     text-transform: uppercase;
-    letter-spacing: .5rem;
+    letter-spacing: .7rem;
     font-weight: bold;
     font-size: 1.6rem;
 
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+}
 
+main h2
+{
+    justify-content: flex-start;
     padding-left: 60px;
 }
+
+footer h2
+{
+    justify-content: flex-end;
+    padding-right: 60px;
+}
+
+/* MAIN (GENERAL) ------------------------------------------------------------------------------ */
 
 main .body
 {
@@ -293,24 +303,6 @@ main aside
 }
 
 /* FOOTER (GENERAL) ---------------------------------------------------------------------------- */
-
-footer h2
-{
-    background-color: var(--red);
-    color: var(--white);
-    height: 130px;
-
-    text-transform: uppercase;
-    letter-spacing: .5rem;
-    font-weight: bold;
-    font-size: 1.6rem;
-
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-
-    padding-right: 60px;
-}
 
 footer .body
 {
