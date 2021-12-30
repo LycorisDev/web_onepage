@@ -187,45 +187,39 @@ footer h2
     padding-right: 60px;
 }
 
-/* MAIN (GENERAL) ------------------------------------------------------------------------------ */
+/* MAIN & FOOTER ------------------------------------------------------------------------------- */
 
-main .body
+h3
 {
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: flex-start;
-}
-
-main section
-{
-    margin: 60px;
-    width: 70%;
-}
-
-main section div
-{
-    height: 240px;
-    margin-bottom: 10px;
-}
-
-main section div p
-{
-    height: 150px;
-    line-height: 2.5;
-}
-
-main section h3
-{
-    margin: 35px 0px;
     text-transform: uppercase;
     letter-spacing: .2rem;
     font-weight: bold;
     font-size: 1.1rem;
 }
 
-main .section h3:first-child
+.texts p
 {
-    margin-top: 0px;
+    line-height: 2.5;
+}
+
+/* MAIN (GENERAL) ------------------------------------------------------------------------------ */
+
+main section
+{
+    padding: 30px 60px 60px 20px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+}
+
+main div
+{
+    margin: 0 40px;
+}
+
+main h3
+{
+    margin: 35px 0px;
 }
 
 #main_text_1 h3::after
@@ -311,15 +305,11 @@ footer .body
     align-items: center;
 }
 
-footer .texts h3
+footer h3
 {
     margin: 50px;
     margin-bottom: 30px;
     text-align: center;
-    text-transform: uppercase;
-    letter-spacing: .2rem;
-    font-weight: bold;
-    font-size: 1.1rem;
 }
 
 footer .texts h3::after
@@ -338,8 +328,7 @@ footer .texts p
     width: 700px;
     height: 80px;
     margin-bottom: 20px;
-    line-height: 2.2;
-} 
+}
 
 /* FOOTER (GUITARS) ---------------------------------------------------------------------------- */
 
