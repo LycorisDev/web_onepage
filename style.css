@@ -14,6 +14,11 @@
     padding: 0px;
 }
 
+html
+{
+    scroll-behavior: smooth;
+}
+
 body
 {
     color: var(--grey);
@@ -26,6 +31,26 @@ body
 header, main, footer
 {
     height: 100vh;
+}
+
+main, footer
+{
+    background-color: var(--white);
+}
+
+/* SCROLLBAR ------------------------------------------------------------------------------------ */
+
+::-webkit-scrollbar
+{
+    width: 10px;
+    background-color: var(--white);
+}
+
+::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    background-color: var(--red);
+    border: 1px solid var(--white);
 }
 
 /* LINKS --------------------------------------------------------------------------------------- */
@@ -125,7 +150,7 @@ header .body::before
 header .body
 {
     height: 100%;
-    background: url("../images/background.jpg") no-repeat;
+    background: url("./images/background.jpg") no-repeat;
     background-size: cover;
 }
 
@@ -259,8 +284,6 @@ main h3
 
 main aside
 {
-    border: solid red 4px;
-
     margin: 60px;
     width: 35%;
     height: 80%;
