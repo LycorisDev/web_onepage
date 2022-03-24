@@ -231,6 +231,12 @@ h3
 
 /* MAIN (GENERAL) ------------------------------------------------------------------------------ */
 
+main .body
+{
+    display: flex;
+    flex-flow: row nowrap;
+}
+
 main section
 {
     padding: 30px 60px 60px 20px;
@@ -287,9 +293,6 @@ main h3
 main aside
 {
     margin: 60px;
-    width: 35%;
-    height: 80%;
-
     display: flex;
     flex-flow: column nowrap;
 }
@@ -297,27 +300,24 @@ main aside
 #first_row
 {
     height: 425px;
-
     display: flex;
     flex-flow: row nowrap;
 }
 
 #first_row img:first-child
 {
-    margin-right: 7px;
-    width: 360px;
+    margin-right: 12px;
+    width: 53%;
 }
 
 #first_row img:last-child
 {
-    margin-left: 7px;
-    width: 270px;
+    width: 45%;
 }
 
 #second_row img
 {
     width: 100%;
-    height: 235px;
     margin-top: 14px;
 }
 
