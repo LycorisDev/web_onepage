@@ -58,6 +58,7 @@ main, footer
 a
 {
     text-decoration: none;
+    transition: color 0.5s;
 }
 
 a:visited
@@ -81,6 +82,7 @@ a:hover
 {
     border: 1px solid var(--red);
     border-radius: 5px;
+    transition: background-color 0.5s;
 }
 
 #button_shop, .button_buy:hover
