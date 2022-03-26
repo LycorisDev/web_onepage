@@ -239,26 +239,32 @@ h3
 
 main .body
 {
+    padding: 50px;
+    height: calc(100vh - 230px);
+    overflow: auto;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
+    justify-content: space-between;
 }
 
 main section
 {
-    padding: 30px 60px 60px 20px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    width: 50%;
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     justify-content: space-between;
 }
 
-main div
+main h3, main .texts
 {
-    margin: 0 40px;
+    margin-bottom: 20px;
 }
 
-main h3
+main .texts:last-child
 {
-    margin: 35px 0px;
+    margin-bottom: 0;
 }
 
 #main_text_1 h3::after
@@ -266,7 +272,7 @@ main h3
     content: "";
     display: inline-block;
     height: var(--fancy_line_height);
-    width: 409px;
+    width: 309px;
     background-color: var(--red);
     margin-left: 10px;
     margin-bottom: 3px;
@@ -277,7 +283,7 @@ main h3
     content: "";
     display: inline-block;
     height: var(--fancy_line_height);
-    width: 445px;
+    width: 345px;
     background-color: var(--red);
     margin-right: 10px;
     margin-bottom: 3px;
@@ -288,7 +294,7 @@ main h3
     content: "";
     display: inline-block;
     height: var(--fancy_line_height);
-    width: 462px;
+    width: 362px;
     background-color: var(--red);
     margin-left: 10px;
     margin-bottom: 3px;
@@ -298,33 +304,27 @@ main h3
 
 main aside
 {
-    margin: 60px;
     display: flex;
     flex-flow: column nowrap;
 }
 
-#first_row
-{
-    height: 425px;
-    display: flex;
-    flex-flow: row nowrap;
-}
-
 #first_row img:first-child
 {
-    margin-right: 12px;
-    width: 53%;
+    margin-right: 10px;
+    width: 290px;
+    height: 430px;
 }
 
 #first_row img:last-child
 {
-    width: 45%;
+    width: 230px;
+    height: 430px;
 }
 
 #second_row img
 {
-    width: 100%;
-    margin-top: 14px;
+    width: 534px;
+    margin-top: 10px;
 }
 
 /* FOOTER (GENERAL) ---------------------------------------------------------------------------- */
