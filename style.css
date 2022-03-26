@@ -46,6 +46,11 @@ main, footer
     background-color: var(--white);
 }
 
+::-webkit-scrollbar:horizontal
+{
+    height: 10px;
+}
+
 ::-webkit-scrollbar-thumb
 {
     border-radius: 10px;
@@ -100,7 +105,8 @@ a:hover
 .button_buy
 {
     margin: 15px;
-    padding: 8px 40px;
+    padding: 8px 30px;
+    width: max-content;
     text-transform: uppercase;
     font-weight: bold;
 }
@@ -350,79 +356,69 @@ footer .texts h3::after
 
 footer .texts p
 {
-    width: 700px;
-    height: 80px;
-    margin-bottom: 20px;
+    margin: auto;
+    margin-bottom: 30px;
+    max-width: 60%;
 }
 
 /* FOOTER (GUITARS) ---------------------------------------------------------------------------- */
 
 #guitars
 {
-    width: 1500px;
     display: flex;
-    justify-content: space-between;
+    flex-flow: row wrap;
+    justify-content: center;
 }
 
-#guitars img
+.guitar
 {
-    width: 90%;
-    margin: auto;
-}
-
-#guitars tr
-{
-    margin: 0px 50px;
-    width: 1400px;
-
+    margin: 30px;
+    width: 200px;
+    height: 450px;
+    text-align: center;
+    position: relative;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-flow: column nowrap;
     align-items: center;
 }
 
-#guitars td
+.guitar img
 {
-    width: 350px;
-    margin: 0px 50px;
-    display: flex;
+    margin-bottom: 15px;
+    height: 280px;
 }
 
-#row_names td
+.guitar h4
 {
-    display: table;
-}
-
-h4
-{
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
-
+    margin-bottom: 20px;
+    letter-spacing: .2rem;
+    line-height: 1.7;
     text-transform: uppercase;
     font-weight: bold;
-    letter-spacing: .2rem;
 }
 
-#row_prices td
+.guitar button
 {
-    display: flex;
-    justify-content: space-around;
+    position: absolute;
+    bottom: 0;
 }
 
 .price
 {
+    position: absolute;
+    bottom: 65px;
     letter-spacing: .2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.price p
+{
+    margin: 0 15px;
 }
 
 .old_price
 {
     text-decoration: line-through;
-}
-
-#row_buttons td
-{
-    display: flex;
-    justify-content: center;
 }
 
