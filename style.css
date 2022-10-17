@@ -62,13 +62,9 @@ main, footer
 
 a
 {
+    color: var(--grey);
     text-decoration: none;
     transition: color 0.5s;
-}
-
-a:visited
-{
-    color: var(--grey);
 }
 
 a:hover
